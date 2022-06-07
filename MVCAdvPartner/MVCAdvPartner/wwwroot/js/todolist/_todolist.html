@@ -1,0 +1,52 @@
+﻿<section style="background-color: #e2d5de; height: 100%;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" 
+                     style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                        <h6 class="mb-3">Список дел</h6>
+                        <form class="d-flex justify-content-center align-items-center mb-4">
+                            <div class="form-outline flex-fill">
+                                <input type="text" 
+                                       id="form3" 
+                                       class="form-control form-control-lg"
+                                       placeholder="Что нужно сделать?" 
+                                       ng-model="$ctrl.taskText"
+                                       ng-keyup="$event.key == 13 && $ctrl.addTask($ctrl.taskText)"/>
+                            </div>
+                            <button type="submit" 
+                                    class="btn btn-primary btn-lg ms-2"
+                                    ng-click="$ctrl.addTask($ctrl.taskText)">Добавить</button>
+                        </form>
+
+                        <ul class="list-group mb-0"
+                            ui-sortable="$ctrl.sortableOptions"
+                            ng-model="$ctrl.todolist">
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2"
+                                ng-repeat="task in $ctrl.todolist">
+                                <div class="d-flex align-items-center">
+                                    <input class="form-check-input me-2" 
+                                           type="checkbox" 
+                                           value="" 
+                                           aria-label="..." 
+                                           ng-model="task.completed"
+                                           ng-change="$ctrl.changeCompleted(task)"/>
+                                    <span ng-bind="task.text"
+                                          ng-class="{'line-through':task.completed}"></span>
+                                </div>
+                                <a href="#!" 
+                                   data-mdb-toggle="tooltip" 
+                                   title="Удалить"
+                                   ng-click="$ctrl.removeTask(task.id)"
+                                   ng-show="!task.completed">
+                                    <i class="fa fa-times text-primary"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

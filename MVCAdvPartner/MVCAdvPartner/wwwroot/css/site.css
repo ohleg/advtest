@@ -1,0 +1,30 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+html, body, .wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

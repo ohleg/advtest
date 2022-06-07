@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - приложение ASP.NET</title>
+
+    <link href="~/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" rel="stylesheet" />
+
+    <link href="~/wwwroot/css/site.css" rel="stylesheet" />
+    <link href="~/wwwroot/css/pageProof.css" rel="stylesheet" />
+    <link href="~/wwwroot/js/chat/_chat.css" rel="stylesheet" />
+    <link href="~/wwwroot/js/todolist/_todolist.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet" />
+</head>
+<body ng-cloak>
+    <div class="wrapper">
+        @RenderBody()
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="~/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="~/wwwroot/lib/angular-ui-sortable/sortable.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signalr.js/2.1.0/jquery.signalR.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+
+    <script src="~/wwwroot/js/site.js"></script>
+    <script src="~/wwwroot/js/chat/chat.module.js"></script>
+    <script src="~/wwwroot/js/chat/chat.hub.js"></script>
+    <script src="~/wwwroot/js/chat/chat.component.js"></script>
+    <script src="~/wwwroot/js/chat/message/message.component.js"></script>
+    <script src="~/wwwroot/js/todolist/todolist.module.js"></script>
+    <script src="~/wwwroot/js/todolist/todolist.component.js"></script>
+</body>
+</html>

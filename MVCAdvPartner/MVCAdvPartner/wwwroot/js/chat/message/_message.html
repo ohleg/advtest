@@ -1,0 +1,16 @@
+﻿<div class="incoming_msg"
+     ng-if="$ctrl.incoming">
+    <div class="received_msg">
+        <div class="received_withd_msg">
+            <p ng-bind="$ctrl.msg.message"></p>
+            <span class="time_date"> {{$ctrl.msg.name}}, {{$ctrl.msg.time | date : 'HH:mm'}}</span>
+        </div>
+    </div>
+</div>
+<div class="outgoing_msg"
+     ng-if="!$ctrl.incoming">
+    <div class="sent_msg">
+        <p ng-bind="$ctrl.msg.message"></p>
+        <span class="time_date"> Вы, {{$ctrl.msg.time | date : 'HH:mm'}}</span>
+    </div>
+</div>

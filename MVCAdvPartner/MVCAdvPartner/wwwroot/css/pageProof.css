@@ -1,0 +1,174 @@
+﻿@font-face {
+    font-family: ProximaNova;
+    src: url(/wwwroot/fonts/proximanova_light.otf);
+}
+
+@font-face {
+    font-family: Armata;
+    src: url(/wwwroot/fonts/Armata-Regular.ttf);
+}
+
+@media (max-width: 885px)
+{
+    .pricing-blocks {
+        flex-direction: column;
+    }
+}
+
+.page-proof {
+    height: 100%;
+    background-image: url('/wwwroot/img/abstract.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ProximaNova;
+    font-size: 18px;
+}
+
+.page-proof-scroll {
+    margin: auto;
+    max-height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+.page-proof-flex {
+    height: 100%;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    background-size: cover;
+    color: white;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.pricing-header {
+    text-align: center;
+}
+    .pricing-header h3 {
+        font-family: Armata;
+        font-size: 30px;
+    }
+
+    .pricing-header h5 {
+        max-width: 620px;
+        font-weight: 400;
+        margin-bottom: 50px;
+        opacity: 0.7;
+    }
+
+.pricing-blocks {
+    display: flex;
+    grid-gap: 30px;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.pricing-block {
+    border-radius: 3px;
+    background-color: #3796d8;
+    width: 275px;
+    max-width: 275px;
+}
+
+.pricing-block-params {
+    background-color: white;
+    color: #838383;
+    font-weight: bold;
+}
+
+    .pricing-block-params ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pricing-block-params li {
+        height: 45px;
+        font-size: 15px;
+    }
+
+.pricing-block-header, .pricing-buy {
+    text-transform: uppercase;
+    height: 50px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.pricing-block-header {
+    border-bottom: 1px solid #538cb3;
+    width: 275px;
+    max-width: 275px;
+}
+
+.text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: inherit;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.pricing-block-price {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: inherit;
+}
+
+    .pricing-block-price .price {
+        background-color: rgb(0, 0, 0, .15);
+        border-radius: 20px;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        font-size: 18px;
+        height: 35px;
+        width: inherit;
+        max-width: inherit;
+    }
+
+.param-row, .param-row-alternative {
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.param-row-alternative {
+    background-color: #efefef;
+}
+
+.order-href {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    .order-href:hover {
+        color: white;
+        text-decoration: none;
+        box-shadow: inset 0 0 10px 0px rgba(0,0,0,0.25);
+    }
